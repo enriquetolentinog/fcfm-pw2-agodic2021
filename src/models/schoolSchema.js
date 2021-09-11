@@ -12,6 +12,12 @@ const SchoolSchema = new mongoose.Schema({
     type: Number,
     default: 1,
   },
+  section: {
+    type: String
+  },
+  careers: [{
+    type: String
+  }]
 });
 
 const School = mongoose.model("school", SchoolSchema);
